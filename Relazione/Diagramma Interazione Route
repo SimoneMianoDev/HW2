@@ -1,1 +1,89 @@
+1.
+  Route::get('/', function () {return view('welcome');});
+
+  andando nel link http://localhost/Uni_Anime/public/
+  la route restituisce la view welcome
+
+
+
+2.
+  Route::get('signup', "App\Http\Controllers\SignupController@registrazione_form")->name('signup');
+
+  Ti porta alla view signup
+
+
+  Route::post('signup', "App\Http\Controllers\SignupController@registrati");
+
+  serve per inviare i propri dati al server e permette di registrarsi al sito
+
+
+  Route::get('signup/email/{email}', "App\Http\Controllers\SignupController@checkEmail");
+
+  Verifica l'email
+
+
+  Route::get('signup/username/{username}', "App\Http\Controllers\SignupController@checkUsername");
+
+  Verifica l'username
+
+
+
+3.
+  Route::get('home', "App\Http\Controllers\HomeController@index")->name('home');
+
+  Ti porta alla view Home
+
+
+
+4.
+  Route::get('login', "App\Http\Controllers\LoginController@login_form");
+
+  Ti porta alla view login
+
+
+  Route::post('login', "App\Http\Controllers\LoginController@accedi");
+
+  Invia i dati di login al server e permette di accedere al sito
+
+
+
+5.
+  Route::get('logout', "App\Http\Controllers\LoginController@logout")->name('logout');
+
+  Permette di effettuare il logout dal sito
+
+
+
+6.
+  Route::get('spotify', "App\Http\Controllers\SpotifyController@spoti");
+
+  Ti porta alla view Spotify
+
+
+  Route::get('spotify/searchSpotify/{query}', "App\Http\Controllers\SpotifyController@searchSpotify");
+
+  Ti permette di effettuare la ricerca del brano
+
+
+
+7.
+  Route::get('profilo', "App\Http\Controllers\ProfiloController@index");
+
+  Ti restituisce la view del profilo
+
+
+
+8.
+  Route::get('likes/add', 'App\Http\Controllers\LikeController@add');
+
+  Ti permette di mettere like
+
+
+  Route::get('likes/remove/{titolo}', 'App\Http\Controllers\LikeController@remove');
+
+  Ti permette di rimuovere i like
+
+
+
+
 
