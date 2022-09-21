@@ -1,0 +1,28 @@
+Pixabay: 
+
+La prima API, è utilizzata per a trovare delle immagini dell’anime su cui effettuiamo una ricerca. 
+Dopo aver effettuato la ricerca compariranno 10 risultati corrispondenti alla ricerca effettuata.
+
+Usa un JSON Web Token ottenibile iscrivendosi (Inserito nella variabile ‘img_key’).
+Questo codice serve ad autenticare le richieste che effettueremo.
+
+Endpoint di base: https://pixabay.com/api/
+A cui andiamo a concatenare la JWT , il titolo e il numero di elementi da visualizzare
+
+
+
+Spotify: 
+
+La seconda API è utilizzata per trovate gli album corrispondenti su cui effettuiamo la ricerca
+
+Usa il protocollo di rete OAut2. L’Oaut2 consente di ricevere, dopo essersi identificati attraverso 
+il client ID e il client secret, un token di accesso da parte di un server, che consente di autenticare 
+le proprie richieste. 
+
+Segue l’architettura REST. 
+Gli endpoint dell'API Web di Spotify restituiscono risposte con codifica JSON su artisti musicali, 
+album e brani direttamente dal catalogo dati di Spotify.
+
+L’URL di base è https://api.spotify.com/v1/search
+
+
