@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+        
+    </head>
+
+    <nav id="nav_style">
+        <div id='menu'>
+            
+            <div id='sezioni'>
+            
+            </div>
+        </div>    
+
+        <div id='mobile_menu'>
+            <div id='sezioni_mobile'>
+              
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="overlay">
+        </div>
+    </header>
+
+    <body>
+
+        <section id="feed">
+
+            <form name="search_content" id="search_content">        
+            
+            </form>
+
+
+            <article id='global-view'></article>
+
+                <div class="griglia_post">
+
+                </div>
+
+                <div class="griglia_post">
+                    
+                </div>
+
+                <div class="griglia_post">
+                    
+                </div>
+
+                <div class="griglia_post">
+                   
+                    
+                </div>
+
+                <div class="griglia_post">
+                    
+                </div>
+
+        </section>
+
+
+            <footer id='finale'> 
+                <div>
+                    
+                </div>
+            </footer>
+    </body>
+
+</html>
